@@ -156,11 +156,14 @@ bench get-app --branch version-13 myapp https://github.com/myusername/myapp.git
 bench --site dev-app.localhost install-app myapp
 ```
 
-To install ERPNext (from the version-13 branch):
+To install Ontum apps:
 
 ```shell
-bench get-app --branch version-13 erpnext https://github.com/frappe/erpnext.git
-bench --site dev-app.localhost install-app erpnext
+bench get-app --branch development otp_auth git@github.com:ontum/ontum_otp_auth.git
+bench get-app --branch development contentready_edu_cms git@github.com:ontum/ontum_edu_cms.git
+bench --site dev-app.localhost install-app otp_auth
+bench --site dev-app.localhost install-app contentready_edu_cms
+
 ```
 
 Note: Both frappe and erpnext must be on branch with same name. e.g. version-12
