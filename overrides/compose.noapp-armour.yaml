@@ -1,0 +1,45 @@
+services:
+  frontend:
+     security_opt:
+      - apparmor:unconfined
+  configurator:
+      security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  backend:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  websocket:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  scheduler:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  queue-default:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  queue-short:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  queue-long:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  redis:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+        
+  traefik:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+  db:
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined

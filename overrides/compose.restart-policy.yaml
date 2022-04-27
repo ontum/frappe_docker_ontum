@@ -1,0 +1,24 @@
+services:
+  frontend:
+    restart: on-failure
+  configurator:
+    restart: on-failure
+  backend:
+    restart: on-failure
+  websocket:
+    restart: on-failure
+  scheduler:
+    restart: on-failure
+  queue-default:
+    restart: on-failure
+  queue-short:
+    restart: on-failure
+  queue-long:
+    restart: on-failure
+  redis:
+    restart: on-failure
+        
+  traefik:
+    restart: on-failure
+  db:
+    restart: on-failure
