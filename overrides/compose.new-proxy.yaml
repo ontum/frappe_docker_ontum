@@ -20,7 +20,7 @@ services:
       - traefik.http.routers.frontend-https.tls.certresolver=le
 
     volumes:
-      - ../images/nginx/nginx-template-cors-fix.conf:/etc/nginx/templates/default.conf.template
+      - images/nginx/nginx-template-cors-fix.conf:/etc/nginx/templates/default.conf.template
 
         #networks:
         #traefik-public:
