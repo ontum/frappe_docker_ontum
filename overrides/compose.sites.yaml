@@ -1,0 +1,30 @@
+services:
+  backend:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+  configurator:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+  frontend:
+    volumes:
+    - /home/ubuntu/production/sites:/usr/share/nginx/html/sites:rw
+  queue-default:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+  queue-long:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+  queue-short:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+  scheduler:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+  websocket:
+    volumes:
+    - /home/ubuntu/production/sites:/home/frappe/frappe-bench/sites:rw
+volumes:
+  assets: {}
+  db-data: {}
+  redis-data: {}
+
